@@ -1,7 +1,13 @@
 - name: print a message
   hosts: localhost
   connection: local
+  vars:
+    role_name: demo
   tasks:
     - name: import a role
       ansible.builtin.import_role:
         name: demo
+
+    - name: import a role
+      ansible.builtin.include_role:
+        name: "{{ role_name }}"
