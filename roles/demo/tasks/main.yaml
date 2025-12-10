@@ -1,7 +1,4 @@
 - name: print a message
   ansible.builtin.debug:
-    msg: "{{ msg }}"
+    msg: "msg -- {{ msg }} x -- {{ x }}"
 
-- name: print a message
-  ansible.builtin.debug:
-    msg: "{{ x }}"
