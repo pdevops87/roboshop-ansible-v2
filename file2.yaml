@@ -4,6 +4,6 @@
   vars:
     msg: hi
   tasks:
-- name: call another yaml within same folder
-  ansible.builtin.import_tasks:
-    file: file1.yaml
+    - name: call another yaml within same folder
+      ansible.builtin.import_tasks:
+        file: file1.yaml
