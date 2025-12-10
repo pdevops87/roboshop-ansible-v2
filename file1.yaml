@@ -1,0 +1,10 @@
+- name: print message
+  hosts: localhost
+  connection: local
+  vars:
+    msg: hi
+  tasks:
+    - name: print message
+      ansible.builtin.debug:
+        msg: say - {{ msg }}
+
