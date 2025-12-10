@@ -1,0 +1,7 @@
+- name: print a message
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: import a role
+      ansible.builtin.import_role:
+        name: demo

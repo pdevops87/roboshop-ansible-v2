@@ -16,3 +16,14 @@ ex:
 
 include_tasks:
    file: {{ file }}.yaml
+
+
+role wise:
+==========
+to call a role name (under role: every folder is a role name) into another folder
+
+- name: print a message
+  hosts: localhost
+  connection: local
+  tasks:
+
