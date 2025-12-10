@@ -2,8 +2,9 @@
   hosts: localhost
   connection: local
   vars:
-    msg: hi
+    msg: hello
+    file: file_include
   tasks:
 - name: call another yaml within same folder
-  ansible.builtin.import_tasks:
-    file: file1.yaml
+  ansible.builtin.include_tasks:
+    file: {{ file }}.yaml

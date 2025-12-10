@@ -1,0 +1,18 @@
+import_tasks:
+=============
+to call a yaml file into another within same folder , this is static parse
+
+ex:
+--
+import_tasks:
+   file: fil1.yaml
+
+include_tasks:
+==============
+to call a yaml file into another within same folder dynamically
+
+ex:
+---
+
+include_tasks:
+   file: {{ file }}.yaml
