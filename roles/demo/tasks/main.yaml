@@ -4,8 +4,8 @@
 
 - name: print y value
   ansible.builtin.include_role:
-    vars:
-      role: demo1
     name: "{{ role }}"
+  vars:
+    role: demo1
 
 
