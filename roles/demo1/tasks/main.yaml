@@ -1,0 +1,3 @@
+- name: print y value
+  ansible.builtin.debug:
+    msg: "y value --- {{ y }}"

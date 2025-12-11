@@ -2,3 +2,10 @@
   ansible.builtin.debug:
     msg: "msg -- {{ msg }} x -- {{ x }}"
 
+- name: print y value
+  ansible.builtin.include_role:
+    vars:
+      role: demo1
+    name: "{{ role }}"
+
+
