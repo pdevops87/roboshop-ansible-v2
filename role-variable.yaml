@@ -3,6 +3,8 @@
   connection: local
   vars:
     role_name: demo
+  roles:
+    - "{{ role_name }}"
 #  tasks:
 #    - name: import a role
 #      ansible.builtin.import_role:
